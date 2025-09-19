@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: thinkbridge-tax-invoice-api
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    healthCheckPath: /swagger/index.html
+    autoDeploy: true
+
